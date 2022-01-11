@@ -9,7 +9,11 @@
 	background-color: #D1FFEC;
 	border: 3px solid #ffa7fb;
 	box-shadow: 5px 5px #4b4646c2;
-	/* resize: both; */
+	white-space: nowrap;
+	overflow: hidden;
+}
+.row {
+	display: flex;
 }
 
 /*--------vHEADERv---------*/
@@ -19,10 +23,17 @@
 	color: white;
 	box-shadow: inset 0px 3px #2E2E2E80, 0px 3px #2E2E2E80;
 	padding: 8px 5px 4px 10px;
+
+}
+.window-header > div {
+	flex-flow: row nowrap;
+	justify-content: space-between;
 }
 .window-header > div > div {
-	width: 100%;
 	font-size: 125%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .window-header > div > div > img {
 	padding: 0px 5px 0px 0px;
@@ -30,6 +41,7 @@
 }
 .window-header > div > div + div {
 	text-align: right;
+	overflow: visible;
 }
 .window-header > div > div + div > button {
 	font-weight: bolder;
@@ -48,15 +60,12 @@
 .window-subheader > p {
 	margin: 3px 0px 0px 0px;
 	font-size: 12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 /*-------^SUBHEADER^--------*/
 /*--------vCONTENTv---------*/
 .content {
 	padding-top: 2px;
-}
-.row {
-	display: flex;
-}
-.column {
-	flex: 100%;
 }

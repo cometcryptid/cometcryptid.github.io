@@ -1,6 +1,6 @@
 body {
 	background-color: #A0D6AE;
-	background-image: url('./images/background.png');
+	background-image: url('../images/background.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -23,8 +23,8 @@ body {
 .btn:active {
 	box-shadow: inset 2px 2px #2E2E2E80, 2px 2px #e2e2e280;
 }
-.btn:focus {
-	outline: none;
+.btn:hover {
+   background-color: #aae4b9c2;
 }
 .readonly { /*prevent highlighting and text cursor*/
    -webkit-touch-callout: none;
