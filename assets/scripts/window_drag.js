@@ -1,4 +1,5 @@
-$(function() {
+$(function() 
+{
    var topZIndex = 1;
    var $window; // initialize variable containing selected window
    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0; // initialzie positions
@@ -6,7 +7,8 @@ $(function() {
    $('.window-header').mousedown(windowGrab);
 
    // stuff that takes place the moment before the mouse moves
-   function windowGrab(event) {
+   function windowGrab(event) 
+   {
       event.preventDefault();
       // set $window to parent of selected header
       $window = $(this).parent();
@@ -23,7 +25,8 @@ $(function() {
       $(document).on('mousemove', windowDrag);
    }
 
-   function windowDrag(event) {
+   function windowDrag(event) 
+   {
       event.preventDefault();
       // calculate new cursor position
       pos1 = pos3 - event.clientX;
@@ -35,7 +38,8 @@ $(function() {
       $window.offset({top: offset.top - pos2, left: offset.left - pos1});
    }
    
-   function windowDrop() {
+   function windowDrop() 
+   {
       // remove mousemove event
       $(document).off('mousemove');
    }
