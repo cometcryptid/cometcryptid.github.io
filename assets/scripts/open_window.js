@@ -1,6 +1,0 @@
-/*
-$(function OpenWindow(windowID) 
-{
-   
-})
-*/

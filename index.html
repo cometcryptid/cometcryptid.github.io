@@ -5,15 +5,12 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
 	<meta name="description" content="my profile"/>
    <!-- -style sheets- -->
-	<link rel="stylesheet" href="assets/styles/site_style.css"/><!--background-->
-   <link rel="stylesheet" href="assets/styles/window_style.css"/><!--window styles-->
+   <link rel="stylesheet" href="assets/styles/style.css"/>
    <!-- -scripts- -->
 	<script
 		src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 		crossorigin="anonymous"></script>
-   <script src="assets/scripts/window_drag.js"></script>
-	<script src="assets/scripts/open_window.js"></script>
 </head>
 
 <!-- -------------------------------- || CONTENTS || -------------------------------- -->
@@ -22,24 +19,24 @@
 <body>
 
 <div id="Desktop">
-  
+
    <div class="window" id="home"> <!-- window name goes in id -->
       <div class="window-header" id="home-header"> <!-- window name preceding '-header' in id -->
          <div class="row readonly">
-            <div class="column">
-               <img src="assets/images/file icon.png"> Comett homepage <!-- window name goes here -->
+            <div class="column window-icon">
+               <img src="assets/images/file icon.png"> Josh homepage <!-- window name goes here -->
             </div>
             <div class="column">
-               <button type="button" class="btn" onclick="window.close()">X</button> <!--# change this later #-->
+               <button type="button" class="btn close-btn">X</button> <!--# change this later #-->
             </div>
          </div>
       </div>
       <!-- Header ^ ----- Subheader v -->
       <div class="window-subheader readonly">
-         <p>comett > pages > home<!-- page fake directory goes here --> </p>
+         <p>josh > pages > home<!-- page fake directory goes here --> </p>
       </div>
       <!-- Subheader ^ ----- Contents v -->
-      <div class="content">
+      <div class="window-content">
          <h1>HI LOL</h1>
       </div>
    </div>
@@ -48,45 +45,49 @@
    <div class="window" id="other" style="width: 400px;"> <!-- window name goes in id -->
       <div class="window-header" id="other-header"> <!-- window name preceding '-header' in id -->
          <div class="row readonly">
-            <div class="column">
+            <div class="column window-icon">
                <img src="assets/images/file icon.png"> THE OTHER ONE <!-- window name goes here -->
             </div>
             <div class="column">
-               <button type="button" class="btn" onclick="window.close()">X</button> <!--# change this later #-->
+               <button type="button" class="btn close-btn">X</button> <!--# change this later #-->
             </div>
          </div>
       </div>
       <!-- Header ^ ----- Subheader v -->
       <div class="window-subheader readonly">
-         <p>comett > pages > other<!-- page fake directory goes here --> </p>
+         <p>josh > pages > other<!-- page fake directory goes here --> </p>
       </div>
       <!-- Subheader ^ ----- Contents v -->
-      <div class="content">
+      <div class="window-content">
          HI LOL
       </div>
    </div>
 
+
    <div class="window" id="third" style="height: 250px; width: 250px"> <!-- window name goes in id -->
       <div class="window-header" id="third-header"> <!-- window name preceding '-header' in id -->
          <div class="row readonly">
-            <div class="column">
-               <img src="assets/images/file icon.png"> NUMBAH 3 <!-- window name goes here -->
+            <div class="column window-icon">
+               <img src="assets/images/file icon.png"> Open Window <!-- window name goes here -->
             </div>
             <div class="column">
-               <button type="button" class="btn" onclick="window.close()">X</button> <!--# change this later #-->
+               <button type="button" class="btn close-btn">X</button> <!--# change this later #-->
             </div>
          </div>
       </div>
       <!-- Header ^ ----- Subheader v -->
       <div class="window-subheader readonly">
-         <p>comett > pages > 3rd<!-- page fake directory goes here --> </p>
+         <p>josh > pages > 3rd<!-- page fake directory goes here --> </p>
       </div>
       <!-- Subheader ^ ----- Contents v -->
-      <div class="content">
-         <button>Something</button>
+      <div class="window-content">
+         <button onclick="OpenWindow('test')">Open test.html</button>
       </div>
    </div>
-  
+
+
 </div>
+
+<script src="assets/scripts/windows.js"></script>
 
 </body>

@@ -1,3 +1,42 @@
+body {
+	background-color: #A0D6AE;
+	background-image: url('../images/background.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Courier New', Courier, monospace;
+	overflow: hidden;
+}
+.btn {
+	font-family: 'Courier New', Courier, monospace;
+	background-color: transparent;
+	border: none;
+	box-shadow: inset 2px 2px #e2e2e280, 2px 2px #2E2E2E80;
+   /*prevent buttons from being highlighted*/
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+.btn:active {
+	box-shadow: inset 2px 2px #2E2E2E80, 2px 2px #e2e2e280;
+}
+.btn:hover {
+   background-color: #aae4b9c2;
+}
+.readonly { /*prevent highlighting and text cursor*/
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+/* == === window styles === == */
+
 .window {
 	width: 600px;
 	height: auto;
@@ -7,7 +46,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: #D1FFEC;
-	border: 3px solid #ffa7fb;
+	border: 3px solid #ffc9f8;
 	box-shadow: 5px 5px #4b4646c2;
 	white-space: nowrap;
 	overflow: hidden;
@@ -19,7 +58,7 @@
 /*--------vHEADERv---------*/
 .window-header {
 	background-color: #59BA8C;
-	border-bottom: 2px solid #ffa7fb;
+	border-bottom: 2px solid #ffc9f8;
 	color: white;
 	box-shadow: inset 0px 3px #2E2E2E80, 0px 3px #2E2E2E80;
 	padding: 8px 5px 4px 10px;
@@ -35,7 +74,7 @@
 	white-space: nowrap;
 	overflow: hidden;
 }
-.window-header > div > div > img {
+.window-icon > img {
 	padding: 0px 5px 0px 0px;
 	transform: translate(0px, 2px);
 }
@@ -54,7 +93,7 @@
 .window-subheader {
 	background-color: #9FE3C3;
 	padding: 0px 0px 0px 10px;
-	border-bottom: 2px solid #ffa7fb;
+	border-bottom: 2px solid #ffc9f8;
 	height: 15px;
 }
 .window-subheader > p {
@@ -66,6 +105,6 @@
 }
 /*-------^SUBHEADER^--------*/
 /*--------vCONTENTv---------*/
-.content {
+.window-content {
 	padding-top: 2px;
 }
